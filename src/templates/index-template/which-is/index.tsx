@@ -18,7 +18,7 @@ export function WhichIs() {
       </S.WhichIs>
 
       <S.Figure>
-        <StaticImage alt="" src="../../images/which-is.png" />
+        <StaticImage alt="" src="../../../images/which-is.png" />
       </S.Figure>
     </S.Container>
   );
