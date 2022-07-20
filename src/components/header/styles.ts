@@ -58,6 +58,7 @@ export const Nav = styled.nav<NavProps>`
     overflow: hidden;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;

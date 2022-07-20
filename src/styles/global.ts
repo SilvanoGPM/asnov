@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 import spyagencyFont from './fonts/spyagency3.ttf';
 import latoFont from './fonts/lato.ttf';
+import latoBlackFont from './fonts/lato-black.ttf';
+import latoBoldFont from './fonts/lato-bold.ttf';
+import latoLightFont from './fonts/lato-light.ttf';
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -14,11 +17,30 @@ export const GlobalStyle = createGlobalStyle`
         src: url(${latoFont}) format('truetype');
     }
 
+    @font-face {
+        font-family: 'Lato';
+        src: url(${latoBlackFont}) format('truetype');
+        font-weight: bolder;
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        src: url(${latoBoldFont}) format('truetype');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: 'Lato';
+        src: url(${latoLightFont}) format('truetype');
+        font-weight: lighter;
+    }
+
     :root {
         --blue-500: #08124b;
         --blue-100: #15f4ee
         --text: #111111;
         --background: #f0f2f5;
+        --gray: #333333;
     }
 
     * {
