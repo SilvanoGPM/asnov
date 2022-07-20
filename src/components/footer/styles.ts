@@ -5,7 +5,7 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  margin-top: 4rem;
+  margin: 4rem 0 1rem;
 
   @media (max-width: 500px) {
     flex-direction: column-reverse;
@@ -18,7 +18,16 @@ export const Footer = styled.footer`
   }
 
   a {
-    font-size: 3rem;
-    color: var(--text);
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    & + a {
+      margin-left: 0.5rem;
+    }
   }
 `;

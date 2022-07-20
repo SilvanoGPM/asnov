@@ -48,8 +48,10 @@ export const Description = styled.div`
   p {
     flex: 1;
     text-align: justify;
+  }
 
-    & + p {
+  .animation {
+    & + .animation {
       @media (max-width: 1080px) {
         margin-left: 0;
         margin-top: 2rem;

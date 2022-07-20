@@ -5,6 +5,8 @@ import { Footer } from './footer';
 
 import { Header } from './header';
 
+import 'animate.css/animate.min.css';
+
 interface LayoutProps {
   children: React.ReactNode;
 }

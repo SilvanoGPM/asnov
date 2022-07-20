@@ -11,11 +11,15 @@ export function Footer() {
       <p>Copyright &copy; {year} - Asnov All Right Reserved</p>
 
       <div>
-        <a href="https://www.instagram.com/asnov.empresa/" target="_blank">
+        <a
+          href="https://www.instagram.com/asnov.empresa/"
+          target="_blank"
+          style={{ background: '#C13584' }}
+        >
           <AiOutlineInstagram />
         </a>
 
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" style={{ background: '#4267B2' }}>
           <AiOutlineFacebook />
         </a>
       </div>

@@ -43,10 +43,6 @@ export const Steps = styled.ul`
     display: flex;
     align-items: center;
 
-    & + li {
-      margin-top: 1rem;
-    }
-
     p {
       flex: 1;
     }
@@ -60,6 +56,12 @@ export const Steps = styled.ul`
       height: var(--size);
       width: var(--size);
       margin-right: var(--size);
+    }
+  }
+
+  .animation {
+    & + .animation {
+      margin-top: 1rem;
     }
   }
 `;
