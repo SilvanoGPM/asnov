@@ -62,7 +62,7 @@ export const Nav = styled.nav<NavProps>`
     top: 0;
     left: 0;
     right: 0;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
     height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
     padding: ${({ isOpen }) => (isOpen ? '4rem 1rem' : '0')};

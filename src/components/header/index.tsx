@@ -7,7 +7,7 @@ import { Navigation } from './navigation';
 import * as S from './styles';
 
 export function Header() {
-  const [showNav, setShowNav] = React.useState(true);
+  const [showNav, setShowNav] = React.useState(false);
 
   function handleOpen() {
     setShowNav(true);

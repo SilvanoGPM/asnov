@@ -20,14 +20,18 @@ export const WhichIs = styled.div`
 
   h2 {
     color: var(--blue-500);
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 8vw, 3rem);
     text-transform: uppercase;
     font-weight: bolder;
     margin-bottom: 2rem;
+
+    @media (max-width: 500px) {
+      align-self: start;
+    }
   }
 
   p {
-    font-size: 2rem;
+    font-size: clamp(1.1rem, 6vw, 2rem);
     font-weight: 100;
     color: var(--gray);
 

@@ -18,7 +18,10 @@ export function WhichIs() {
       </S.WhichIs>
 
       <S.Figure>
-        <StaticImage alt="" src="../../../images/which-is.png" />
+        <StaticImage
+          alt="Duas garotas ao lado de uma lata de lixo, uma garota com uma vassoura na mão, outra com celular uma garrafa de água em uma mão e tirando uma selfie com a outra"
+          src="../../../images/which-is.png"
+        />
       </S.Figure>
     </S.Container>
   );
