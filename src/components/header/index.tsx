@@ -33,7 +33,7 @@ export function Header() {
         <Navigation isOpen={showNav} onClose={handleClose} />
 
         {!showNav && (
-          <S.Menu onClick={handleOpen}>
+          <S.Menu aria-label="Abrir menu" onClick={handleOpen}>
             <AiOutlineMenu />
           </S.Menu>
         )}

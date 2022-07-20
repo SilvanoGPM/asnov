@@ -10,7 +10,11 @@ export function Donate() {
       <div data-scroll="donate" />
 
       <S.Container>
-        <ScrollAnimation animateIn="animate__jackInTheBox" delay={500} animateOnce>
+        <ScrollAnimation
+          animateIn="animate__jackInTheBox"
+          delay={500}
+          animateOnce
+        >
           <S.Figure>
             <StaticImage
               alt="Duas pessoas doando produtos, enquanto outras duas auxiliam"
@@ -29,38 +33,38 @@ export function Donate() {
           </ScrollAnimation>
 
           <S.Steps>
-            <ScrollAnimation
-              animateIn="animate__fadeIn"
-              delay={800}
-              animateOnce
-              className="animation"
-            >
-              <li>
+            <li>
+              <ScrollAnimation
+                animateIn="animate__fadeIn"
+                delay={800}
+                animateOnce
+                className="donateItemWrapper"
+              >
                 <p>Clique em doar</p>
-              </li>
-            </ScrollAnimation>
+              </ScrollAnimation>
+            </li>
 
-            <ScrollAnimation
-              animateIn="animate__fadeIn"
-              delay={900}
-              animateOnce
-              className="animation"
-            >
-              <li>
+            <li>
+              <ScrollAnimation
+                animateIn="animate__fadeIn"
+                delay={900}
+                animateOnce
+                className="donateItemWrapper"
+              >
                 <p>Se cadastre</p>
-              </li>
-            </ScrollAnimation>
+              </ScrollAnimation>
+            </li>
 
-            <ScrollAnimation
-              animateIn="animate__fadeIn"
-              delay={1000}
-              animateOnce
-              className="animation"
-            >
-              <li>
+            <li>
+              <ScrollAnimation
+                animateIn="animate__fadeIn"
+                delay={1000}
+                animateOnce
+                className="donateItemWrapper"
+              >
                 <p>Escolha o método de pagamento</p>
-              </li>
-            </ScrollAnimation>
+              </ScrollAnimation>
+            </li>
           </S.Steps>
 
           <ScrollAnimation

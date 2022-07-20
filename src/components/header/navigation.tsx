@@ -36,7 +36,7 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
         <button onClick={handleScrollTo('donate')}>Doar</button>
       </S.NavItem>
 
-      <S.Close onClick={onClose}>
+      <S.Close aria-label="Fechar Menu" onClick={onClose}>
         <AiOutlineClose />
       </S.Close>
     </S.Nav>

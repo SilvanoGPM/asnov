@@ -12,6 +12,7 @@ export function Footer() {
 
       <div>
         <a
+          aria-label="Página no Instagram"
           href="https://www.instagram.com/asnov.empresa/"
           target="_blank"
           style={{ background: '#C13584' }}
@@ -19,7 +20,12 @@ export function Footer() {
           <AiOutlineInstagram />
         </a>
 
-        <a href="https://www.facebook.com/ASNOV-101297262668673/?ref=page_internal" target="_blank" style={{ background: '#4267B2' }}>
+        <a
+          aria-label="Página no Facebook"
+          href="https://www.facebook.com/ASNOV-101297262668673/?ref=page_internal"
+          target="_blank"
+          style={{ background: '#4267B2' }}
+        >
           <AiOutlineFacebook />
         </a>
       </div>

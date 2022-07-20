@@ -40,27 +40,28 @@ export const Steps = styled.ul`
     font-weight: 100;
     color: var(--gray);
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
 
     p {
       flex: 1;
     }
 
-    &::before {
-      --size: 0.8rem;
-      content: '';
-      display: block;
-      background-color: var(--blue-500);
-      border-radius: 50%;
-      height: var(--size);
-      width: var(--size);
-      margin-right: var(--size);
-    }
-  }
+    .donateItemWrapper {
+      display: flex;
+      align-items: center;
 
-  .animation {
-    & + .animation {
+      &::before {
+        --size: 0.8rem;
+        content: '';
+        display: block;
+        background-color: var(--blue-500);
+        border-radius: 50%;
+        height: var(--size);
+        width: var(--size);
+        margin-right: var(--size);
+      }
+    }
+
+    & + li {
       margin-top: 1rem;
     }
   }
