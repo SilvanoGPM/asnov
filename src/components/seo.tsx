@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 interface SEOProps {
   title?: string;
   description?: string;
   pathname?: string;
+  children?: ReactNode;
 }
 
-export function SEO({ title, description, pathname }: SEOProps) {
+export function SEO({ title, description, pathname, children }: SEOProps) {
   const {
     title: defaultTitle,
     description: defaultDescription,
@@ -32,6 +33,8 @@ export function SEO({ title, description, pathname }: SEOProps) {
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <meta name="robots" content="all" />
+      {children}
     </>
   );
 }
