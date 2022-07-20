@@ -18,18 +18,22 @@ export function Header() {
   }
 
   return (
-    <S.Header>
-      <S.Logo>
-        <StaticImage alt="Logo da Asnov" src="../../images/logo.png" />
-      </S.Logo>
+    <>
+      <S.Header>
+        <S.Logo>
+          <StaticImage alt="Logo da Asnov" src="../../images/logo.png" />
+        </S.Logo>
 
-      <Navigation isOpen={showNav} onClose={handleClose} />
+        <Navigation isOpen={showNav} onClose={handleClose} />
 
-      {!showNav && (
-        <S.Menu onClick={handleOpen}>
-          <AiOutlineMenu />
-        </S.Menu>
-      )}
-    </S.Header>
+        {!showNav && (
+          <S.Menu onClick={handleOpen}>
+            <AiOutlineMenu />
+          </S.Menu>
+        )}
+      </S.Header>
+
+      <S.HeaderSpacer />
+    </>
   );
 }

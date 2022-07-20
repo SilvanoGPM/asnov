@@ -11,6 +11,16 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+`;
+
+export const HeaderSpacer =styled.div`
+  width: 100%;
+  height: 120px;
 `;
 
 export const Logo = styled.figure`
