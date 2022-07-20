@@ -25,7 +25,7 @@ export function Volunteers() {
         </ScrollAnimation>
 
         <S.Description>
-          <ScrollAnimation animateIn="animate__flipInY" animateOnce className="animation">
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce className="animation">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
               similique autem porro eum tenetur cumque mollitia molestias nihil
@@ -34,7 +34,7 @@ export function Volunteers() {
             </p>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__flipInY" delay={1000} animateOnce className="animation">
+          <ScrollAnimation animateIn="animate__fadeIn" delay={500} animateOnce className="animation">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
               similique autem porro eum tenetur cumque mollitia molestias nihil

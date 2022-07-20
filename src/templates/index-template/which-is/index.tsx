@@ -10,7 +10,7 @@ export function WhichIs() {
       <div data-scroll="which-is" />
       <S.Container>
         <S.WhichIs>
-          <ScrollAnimation animateIn="animate__fadeInUpBig" animateOnce>
+          <ScrollAnimation animateIn="animate__fadeIn" animateOnce>
             <h2>O que é a Asnov?</h2>
           </ScrollAnimation>
 
