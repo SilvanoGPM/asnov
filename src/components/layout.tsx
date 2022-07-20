@@ -1,10 +1,8 @@
 import * as React from 'react';
 
-import { GlobalStyle } from '../../styles/global';
+import { GlobalStyle } from '../styles/global';
 
-import { Header } from '../header';
-
-import * as S from './styles';
+import { Header } from './header';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,9 +15,7 @@ export function Layout({ children }: LayoutProps) {
 
       <Header />
 
-      <S.Container>
-        {children}
-      </S.Container>
+      {children}
     </>
   );
 }

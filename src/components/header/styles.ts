@@ -16,9 +16,12 @@ export const Header = styled.header`
   left: 0;
   right: 0;
   z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 `;
 
-export const HeaderSpacer =styled.div`
+export const HeaderSpacer = styled.div`
   width: 100%;
   height: 90px;
 `;
@@ -93,13 +96,9 @@ export const NavItem = styled.div`
     font-style: italic;
     color: #ffffff;
     border: none;
-    background: transparent;
-    font-size: 1.3rem;
+    font-size: 1rem;
     position: relative;
-
-    @media (min-width: 1080px) {
-      font-size: 1.5rem;
-    }
+    background-color: transparent;
 
     &::after {
       content: '';
@@ -119,7 +118,7 @@ export const NavItem = styled.div`
   }
 
   & + & {
-    margin-left: 1rem;
+    margin-left: 2rem;
 
     @media (max-width: 900px) {
       margin-top: 3rem;

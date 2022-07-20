@@ -12,7 +12,7 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
   return (
     <S.Nav isOpen={isOpen}>
       <S.NavItem>
-        <button>Doar</button>
+        <button>Nossa empresa</button>
       </S.NavItem>
 
       <S.NavItem>
@@ -20,11 +20,11 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
       </S.NavItem>
 
       <S.NavItem>
-        <button>Nossa empresa</button>
+        <button>Localização</button>
       </S.NavItem>
 
       <S.NavItem>
-        <button>Localização</button>
+        <button>Doar</button>
       </S.NavItem>
 
       <S.Close onClick={onClose}>
