@@ -10,7 +10,7 @@ export function Volunteers() {
 
       <S.Figure>
         <StaticImage
-          alt=""
+          alt="Várias pessoas levando caixas"
           src="../../../images/volunteers.png"
           objectFit="cover"
         />

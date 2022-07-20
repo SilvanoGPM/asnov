@@ -19,7 +19,10 @@ export function Location() {
         </S.Location>
 
         <S.Figure>
-          <StaticImage alt="" src="../../../images/location.svg" />
+          <StaticImage
+            alt="Mulher em cima de marcador de mapa azul, com algumas árvores ao lado"
+            src="../../../images/location.svg"
+          />
         </S.Figure>
       </S.Container>
     </S.Wrapper>

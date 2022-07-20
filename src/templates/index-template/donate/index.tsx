@@ -7,7 +7,10 @@ export function Donate() {
   return (
     <S.Container>
       <S.Figure>
-        <StaticImage alt="" src="../../../images/donate.png" />
+        <StaticImage
+          alt="Duas pessoas doando produtos, enquanto outras duas auxiliam"
+          src="../../../images/donate.png"
+        />
       </S.Figure>
 
       <S.StepsContainer>
