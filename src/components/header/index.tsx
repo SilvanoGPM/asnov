@@ -20,9 +20,15 @@ export function Header() {
   return (
     <>
       <S.Header>
-        <S.Logo>
-          <StaticImage alt="Logo da Asnov" src="../../images/logo.png" />
-        </S.Logo>
+        <a href="/">
+          <S.Logo>
+            <StaticImage
+              alt="Nome Asnov com um símbolo de reciclagem no lugar do o."
+              src="../../images/logo.png"
+              placeholder="blurred"
+            />
+          </S.Logo>
+        </a>
 
         <Navigation isOpen={showNav} onClose={handleClose} />
 
