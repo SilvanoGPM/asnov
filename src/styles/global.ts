@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
 
     :root {
         --blue-500: #08124b;
-        --blue-100: #15f4ee
+        --blue-100: #15f4ee;
         --text: #111111;
         --background: #f0f2f5;
         --gray: #333333;

@@ -6,7 +6,7 @@ interface NavProps {
 
 export const Header = styled.header`
   background-color: var(--blue-500);
-  height: 120px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ export const Header = styled.header`
 
 export const HeaderSpacer =styled.div`
   width: 100%;
-  height: 120px;
+  height: 90px;
 `;
 
 export const Logo = styled.figure`
