@@ -34,6 +34,7 @@ export function SEO({ title, description, pathname, children }: SEOProps) {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="robots" content="all" />
+      <meta name="theme-color" content="#08124b" />
       {children}
     </>
   );
