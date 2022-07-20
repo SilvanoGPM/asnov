@@ -6,6 +6,7 @@ const config: GatsbyConfig = {
     description:
       'Nós somos uma Assosiação de catadores de papel, papelão e material reaproveitável.',
     siteUrl: `https://asnov.gtsb.io/`,
+    image: `/banner.jpeg`,
   },
   graphqlTypegen: true,
   plugins: [
