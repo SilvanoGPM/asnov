@@ -16,10 +16,11 @@ export function WhichIs() {
 
           <ScrollAnimation animateIn="animate__fadeIn" delay={800} animateOnce>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-              fugit, sequi qui dicta illum quae, deleniti sint, explicabo
-              voluptatum iusto numquam earum placeat labore culpa neque
-              voluptate ducimus quidem. Architecto.
+              A Associação de Catadores de Papelão e Material Reaproveitável
+              Nova Vida (ASNOV) foi inaugurada em{' '}
+              <span>05 de Abril, 2004</span> e é em boa parte responsável pela
+              movimentação do mercado da <span>reciclagem no Brasil</span>. Eles representam
+              o elo essencial entre nosso consumo e a industria da reciclagem.
             </p>
           </ScrollAnimation>
         </S.WhichIs>

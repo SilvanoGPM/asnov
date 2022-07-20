@@ -46,11 +46,34 @@ export const Description = styled.div`
   }
 
   p {
-    flex: 1;
     text-align: justify;
+
+    a {
+      color: var(--blue-500);
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        background-color: var(--blue-500);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 
   .animation {
+    flex: 1;
     & + .animation {
       @media (max-width: 1080px) {
         margin-left: 0;

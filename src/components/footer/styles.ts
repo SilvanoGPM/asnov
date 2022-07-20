@@ -15,6 +15,10 @@ export const Footer = styled.footer`
 
   p {
     text-align: center;
+
+    @media (max-width: 500px) {
+      margin-top: 1rem;
+    }
   }
 
   a {

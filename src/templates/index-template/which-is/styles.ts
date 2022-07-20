@@ -34,6 +34,12 @@ export const WhichIs = styled.div`
     font-size: clamp(1.1rem, 6vw, 2rem);
     font-weight: 100;
     color: var(--gray);
+    text-align: justify;
+
+    span {
+      color: var(--blue-500);
+      font-weight: bold;
+    }
 
     @media (max-width: 1080px) {
       max-width: 700px;

@@ -51,5 +51,28 @@ export const Location = styled.div`
     font-weight: 100;
     color: #ffffff;
     max-width: 500px;
+    text-align: justify;
+
+     a {
+      color: var(--blue-100);
+      text-decoration: none;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        background-color: var(--blue-100);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+     }
   }
 `;

@@ -19,7 +19,7 @@ export function Footer() {
           <AiOutlineInstagram />
         </a>
 
-        <a href="#" target="_blank" style={{ background: '#4267B2' }}>
+        <a href="https://www.facebook.com/ASNOV-101297262668673/?ref=page_internal" target="_blank" style={{ background: '#4267B2' }}>
           <AiOutlineFacebook />
         </a>
       </div>

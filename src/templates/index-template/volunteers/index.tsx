@@ -25,21 +25,43 @@ export function Volunteers() {
         </ScrollAnimation>
 
         <S.Description>
-          <ScrollAnimation animateIn="animate__fadeIn" animateOnce className="animation">
+          <ScrollAnimation
+            animateIn="animate__fadeIn"
+            animateOnce
+            className="animation"
+          >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
-              similique autem porro eum tenetur cumque mollitia molestias nihil
-              explicabo, velit, doloribus delectus facilis? Provident iure unde
-              rem quos. Ratione, totam.
+              O sistema de voluntários funcionará de forma simples, serão
+              dividos 3 grupos: o dos moradores, da triagem e do armazenamento
+              cada grupo terá funções específicas e poderá ajudar de diferentes
+              maneiras.
             </p>
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeIn" delay={500} animateOnce className="animation">
+          <ScrollAnimation
+            animateIn="animate__fadeIn"
+            delay={500}
+            animateOnce
+            className="animation"
+          >
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
-              similique autem porro eum tenetur cumque mollitia molestias nihil
-              explicabo, velit, doloribus delectus facilis? Provident iure unde
-              rem quos. Ratione, totam.
+              Você tem interesse em ajudar nossa associação? Se sim é simples,
+              basta nos seguir em nossas{' '}
+              <a
+                href="https://www.instagram.com/asnov.empresa/"
+                target="_blank"
+              >
+                redes sociais
+              </a>{' '}
+              e preencher o seguinte{' '}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe_F0eyXE7HipDgEooM5g1SKMhUi9e2bfFCz9YUus8vOXwdvg/viewform"
+                target="_blank"
+              >
+                formulário
+              </a>{' '}
+              para ser chamado, fazendo isso com pouco tempo você poderá já
+              estar ajudando.
             </p>
           </ScrollAnimation>
         </S.Description>

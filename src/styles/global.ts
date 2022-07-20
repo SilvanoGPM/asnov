@@ -57,6 +57,17 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 720px) {
             font-size: 87.5%; // 14px
         }
+
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar  { width: 9px }
+
+        &::-webkit-scrollbar-track { background-color: transparent }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(155, 155, 155, 0.5);
+          border: transparent
+        }
     }
 
     body {
