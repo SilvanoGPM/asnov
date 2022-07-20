@@ -1,14 +1,34 @@
 import * as React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { AiOutlineMenu } from 'react-icons/ai';
+
+import { Navigation } from './navigation';
 
 import * as S from './styles';
 
 export function Header() {
+  const [showNav, setShowNav] = React.useState(true);
+
+  function handleOpen() {
+    setShowNav(true);
+  }
+
+  function handleClose() {
+    setShowNav(false);
+  }
+
   return (
     <S.Header>
-      <figure style={{ width: '200px' }}>
-        <img alt="Logo da Asnov" src="/static/logo.png" style={{ width: '100%' }} />
-      </figure>
+      <S.Logo>
+        <img alt="Logo da Asnov" src="/static/logo.png" />
+      </S.Logo>
+
+      <Navigation isOpen={showNav} onClose={handleClose} />
+
+      {!showNav && (
+        <S.Menu onClick={handleOpen}>
+          <AiOutlineMenu />
+        </S.Menu>
+      )}
     </S.Header>
   );
 }
