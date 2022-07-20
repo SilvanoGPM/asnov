@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (max-width: 1080px) {
     flex-direction: column;
@@ -21,11 +21,9 @@ export const Container = styled.div`
 
 export const Figure = styled.figure`
   max-width: 600px;
-  margin-left: 2rem;
 
   @media (max-width: 1080px) {
     margin-top: 2rem;
-    margin-left: 0;
   }
 
   img {
@@ -50,7 +48,7 @@ export const Location = styled.div`
     font-size: clamp(1.1rem, 6vw, 2rem);
     font-weight: 100;
     color: #ffffff;
-    max-width: 500px;
+    max-width: 600px;
     text-align: justify;
 
      a {

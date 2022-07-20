@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 8rem;
 
   @media (max-width: 1080px) {
