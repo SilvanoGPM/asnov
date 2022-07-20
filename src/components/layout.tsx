@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { GlobalStyle } from '../styles/global';
+import { Footer } from './footer';
 
 import { Header } from './header';
 
@@ -16,6 +17,8 @@ export function Layout({ children }: LayoutProps) {
       <Header />
 
       {children}
+
+      <Footer />
     </>
   );
 }
