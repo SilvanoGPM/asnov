@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -19,7 +20,7 @@ export function Header() {
   return (
     <S.Header>
       <S.Logo>
-        <img alt="Logo da Asnov" src="/static/logo.png" />
+        <StaticImage alt="Logo da Asnov" src="../../images/logo.png" />
       </S.Logo>
 
       <Navigation isOpen={showNav} onClose={handleClose} />
