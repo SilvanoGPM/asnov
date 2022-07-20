@@ -6,6 +6,7 @@ import { Layout } from '../../components/layout';
 import { WhichIs } from './which-is';
 
 import * as S from './styles';
+import { Volunteers } from './volunteers';
 
 export function IndexTemplate() {
   return (
@@ -14,6 +15,7 @@ export function IndexTemplate() {
 
       <S.Container>
         <WhichIs />
+        <Volunteers />
       </S.Container>
     </Layout>
   );
