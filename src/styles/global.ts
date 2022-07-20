@@ -10,29 +10,34 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Spyagency';
         src: url(${spyagencyFont}) format('truetype');
+        font-display: swap;
     }
 
     @font-face {
         font-family: 'Lato';
         src: url(${latoFont}) format('truetype');
+        font-display: swap;
     }
 
     @font-face {
         font-family: 'Lato';
         src: url(${latoBlackFont}) format('truetype');
         font-weight: bolder;
+        font-display: swap;
     }
 
     @font-face {
         font-family: 'Lato';
         src: url(${latoBoldFont}) format('truetype');
         font-weight: bold;
+        font-display: swap;
     }
 
     @font-face {
         font-family: 'Lato';
         src: url(${latoLightFont}) format('truetype');
         font-weight: lighter;
+        font-display: swap;
     }
 
     :root {
