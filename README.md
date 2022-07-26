@@ -1,54 +1,18 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://asnov.gtsb.io/">
+    <img alt="Asnov" src="./src/images/logo.png" width=300 />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal TypeScript starter
-</h1>
 
-## 🚀 Quick start
+<p align="center">
+Landing Page para Asnov(Assosiação de catadores de papel, papelão e material reaproveitável). 
+</p>
 
-1.  **Create a Gatsby site.**
+## :sparkles: Imagens
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+![image](https://user-images.githubusercontent.com/59753526/181083012-bf5f7675-dc1b-4c25-b32c-3ff7b5bfc71d.png)
+![image](https://user-images.githubusercontent.com/59753526/181083099-3359d782-6d81-4cd7-b183-cb225afe589d.png)
+![image](https://user-images.githubusercontent.com/59753526/181083140-03081a84-9f3e-47cd-9003-179a617d7246.png)
+![image](https://user-images.githubusercontent.com/59753526/181083221-ff82ac9e-4088-4d58-8031-4a476b6e0d12.png)
+![image](https://user-images.githubusercontent.com/59753526/181083242-83893391-50f2-4503-9e9f-559f05deadfd.png)
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
