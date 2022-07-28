@@ -8,7 +8,15 @@
 Landing Page para Asnov(Assosiação de catadores de papel, papelão e material reaproveitável). 
 </p>
 
-## :sparkles: Imagens
+## :rocket: Tecnologias utilizadas:
+
+- [React](https://pt-br.reactjs.org/)
+- [Gatsby](https://www.gatsbyjs.com/)
+- [Styled Components](https://styled-components.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Animate.css](https://animate.style/)
+
+## :sparkles: Imagens:
 
 ![image](https://user-images.githubusercontent.com/59753526/181083012-bf5f7675-dc1b-4c25-b32c-3ff7b5bfc71d.png)
 ![image](https://user-images.githubusercontent.com/59753526/181083099-3359d782-6d81-4cd7-b183-cb225afe589d.png)
