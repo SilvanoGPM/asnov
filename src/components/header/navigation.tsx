@@ -20,21 +20,25 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
 
   return (
     <S.Nav isOpen={isOpen}>
-      <S.NavItem>
-        <button onClick={handleScrollTo('which-is')}>Nossa empresa</button>
-      </S.NavItem>
+      <S.Sections>
+        <S.NavItem>
+          <button onClick={handleScrollTo('which-is')}>Nossa empresa</button>
+        </S.NavItem>
 
-      <S.NavItem>
-        <button onClick={handleScrollTo('volunteers')}>Voluntário</button>
-      </S.NavItem>
+        <S.NavItem>
+          <button onClick={handleScrollTo('volunteers')}>Voluntário</button>
+        </S.NavItem>
 
-      <S.NavItem>
-        <button onClick={handleScrollTo('location')}>Localização</button>
-      </S.NavItem>
+        <S.NavItem>
+          <button onClick={handleScrollTo('location')}>Localização</button>
+        </S.NavItem>
 
-      <S.NavItem>
-        <a href="http://wa.me/5587981727742" target="_blank">Contato</a>
-      </S.NavItem>
+        <S.NavItem>
+          <a href="http://wa.me/5587981727742" target="_blank">
+            Contato
+          </a>
+        </S.NavItem>
+      </S.Sections>
 
       <S.Donation onClick={handleScrollTo('donate')}>Doação</S.Donation>
 

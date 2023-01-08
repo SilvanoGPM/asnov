@@ -49,6 +49,7 @@ export const WhichIs = styled.div`
 
 export  const Figure = styled.figure`
   max-width: 600px;
+  margin-left: 50px;
 
   img {
     width: 100%;

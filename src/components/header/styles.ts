@@ -67,6 +67,8 @@ export const Close = styled(Menu)`
 
 export const Nav = styled.nav<NavProps>`
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 
   @media (max-width: 900px) {
@@ -87,6 +89,18 @@ export const Nav = styled.nav<NavProps>`
       display: flex;
       color: var(--background);
     }
+  }
+`;
+
+export const Sections = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
   }
 `;
 
