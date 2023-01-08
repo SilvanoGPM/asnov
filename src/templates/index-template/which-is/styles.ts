@@ -19,7 +19,7 @@ export const WhichIs = styled.div`
   justify-content: center;
 
   h2 {
-    color: var(--blue-500);
+    color: var(--brand-500);
     font-size: clamp(1.5rem, 8vw, 3rem);
     text-transform: uppercase;
     font-weight: bolder;
@@ -37,7 +37,7 @@ export const WhichIs = styled.div`
     text-align: justify;
 
     span {
-      color: var(--blue-500);
+      color: var(--brand-500);
       font-weight: bold;
     }
 

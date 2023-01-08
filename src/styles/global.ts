@@ -41,8 +41,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-        --blue-500: #08124b;
-        --blue-100: #15f4ee;
+        --brand-500: #336645;
+        --brand-100: #11f561;
+        --text-900: #010101;
         --text: #111111;
         --background: #f0f2f5;
         --gray: #333333;

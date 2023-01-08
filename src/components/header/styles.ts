@@ -5,11 +5,10 @@ interface NavProps {
 }
 
 export const Header = styled.header`
-  background-color: var(--blue-500);
+  background-color: var(--background);
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 2rem;
   position: fixed;
   top: 0;
@@ -27,7 +26,8 @@ export const HeaderSpacer = styled.div`
 `;
 
 export const Logo = styled.figure`
-  width: 200px;
+  width: 150px;
+  margin-right: 30px;
 
   img {
     max-width: 100%;
@@ -36,8 +36,9 @@ export const Logo = styled.figure`
 
 export const Menu = styled.button`
   --size: 40px;
+  margin-left: auto;
   background-color: transparent;
-  color: #ffffff;
+  color: var(--text-900);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +67,7 @@ export const Close = styled(Menu)`
 
 export const Nav = styled.nav<NavProps>`
   display: flex;
+  width: 100%;
 
   @media (max-width: 900px) {
     overflow: hidden;
@@ -79,26 +81,34 @@ export const Nav = styled.nav<NavProps>`
     opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
     height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
     padding: ${({ isOpen }) => (isOpen ? '4rem 1rem' : '0')};
-    background-color: var(--blue-500);
+    background-color: var(--brand-500);
 
     ${Close} {
       display: flex;
+      color: var(--background);
     }
   }
 `;
 
 export const NavItem = styled.div`
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  button {
-    font-family: 'Spyagency';
-    font-weight: 400;
-    font-style: italic;
-    color: #ffffff;
+  button, a {
+    font-family: 'Lato';
+    font-weight: bold;
+    color: var(--text-900);
     border: none;
     font-size: 1rem;
     position: relative;
     background-color: transparent;
+    text-decoration: none;
+
+    @media (max-width: 900px) {
+      color: var(--background);
+    }
 
     &::after {
       content: '';
@@ -108,7 +118,7 @@ export const NavItem = styled.div`
       left: 0;
       width: 0;
       height: 2px;
-      background-color: #ffffff;
+      background-color: var(--text-900);
       transition: 0.2s width;
     }
 
@@ -124,5 +134,22 @@ export const NavItem = styled.div`
       margin-top: 3rem;
       margin-left: 0;
     }
+  }
+`;
+
+export const Donation = styled.button`
+  background-color: var(--brand-500);
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--background);
+  padding: 4px 16px;
+  margin-left: auto;
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    margin-top: 3rem;
+    text-transform: none;
   }
 `;

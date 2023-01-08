@@ -7,7 +7,7 @@ export const Container = styled.section`
   margin-top: 8rem;
 
   h2 {
-    color: var(--blue-500);
+    color: var(--brand-500);
     font-size: clamp(1.5rem, 8vw, 3rem);
     text-transform: uppercase;
     font-weight: bolder;
@@ -49,7 +49,7 @@ export const Description = styled.div`
     text-align: justify;
 
     a {
-      color: var(--blue-500);
+      color: var(--brand-500);
       font-weight: bold;
       text-decoration: none;
       position: relative;
@@ -57,7 +57,7 @@ export const Description = styled.div`
       &::after {
         content: '';
         display: block;
-        background-color: var(--blue-500);
+        background-color: var(--brand-500);
         position: absolute;
         bottom: 0;
         left: 0;

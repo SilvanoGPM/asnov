@@ -50,7 +50,7 @@ export function Location() {
             <S.Figure>
               <StaticImage
                 alt="Mulher em cima de marcador de mapa azul, com algumas árvores ao lado"
-                src="../../../images/location.svg"
+                src="../../../images/location.png"
               />
             </S.Figure>
           </ScrollAnimation>

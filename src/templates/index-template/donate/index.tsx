@@ -7,12 +7,23 @@ import * as S from './styles';
 export function Donate() {
   return (
     <>
-      <div data-scroll="donate" />
+      <div data-scroll="donate" style={{ height: '10px' }} />
 
       <S.Container>
+        <ScrollAnimation animateIn="animate__fadeInUp" delay={500} animateOnce>
+          <h2>Seja um doador</h2>
+          <p>A asnov agradece sua ajuda</p>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="animate__fadeInUp" delay={1000} animateOnce>
+          <S.Button href="https://www.vakinha.com.br/3379713" target="_blank">
+            Doar
+          </S.Button>
+        </ScrollAnimation>
+
         <ScrollAnimation
           animateIn="animate__jackInTheBox"
-          delay={500}
+          delay={1000}
           animateOnce
         >
           <S.Figure>
@@ -22,59 +33,6 @@ export function Donate() {
             />
           </S.Figure>
         </ScrollAnimation>
-
-        <S.StepsContainer>
-          <ScrollAnimation
-            animateIn="animate__fadeInUp"
-            delay={500}
-            animateOnce
-          >
-            <h2>Como doar</h2>
-          </ScrollAnimation>
-
-          <S.Steps>
-            <li>
-              <ScrollAnimation
-                animateIn="animate__fadeIn"
-                delay={800}
-                animateOnce
-                className="donateItemWrapper"
-              >
-                <p>Clique em doar</p>
-              </ScrollAnimation>
-            </li>
-
-            <li>
-              <ScrollAnimation
-                animateIn="animate__fadeIn"
-                delay={900}
-                animateOnce
-                className="donateItemWrapper"
-              >
-                <p>Se cadastre</p>
-              </ScrollAnimation>
-            </li>
-
-            <li>
-              <ScrollAnimation
-                animateIn="animate__fadeIn"
-                delay={1000}
-                animateOnce
-                className="donateItemWrapper"
-              >
-                <p>Escolha o método de pagamento</p>
-              </ScrollAnimation>
-            </li>
-          </S.Steps>
-
-          <ScrollAnimation
-            animateIn="animate__fadeInUp"
-            delay={1500}
-            animateOnce
-          >
-            <S.Button>Doar</S.Button>
-          </ScrollAnimation>
-        </S.StepsContainer>
       </S.Container>
     </>
   );

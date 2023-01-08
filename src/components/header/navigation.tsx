@@ -33,8 +33,10 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
       </S.NavItem>
 
       <S.NavItem>
-        <button onClick={handleScrollTo('donate')}>Doar</button>
+        <a href="http://wa.me/5587981727742" target="_blank">Contato</a>
       </S.NavItem>
+
+      <S.Donation onClick={handleScrollTo('donate')}>Doação</S.Donation>
 
       <S.Close aria-label="Fechar Menu" onClick={onClose}>
         <AiOutlineClose />

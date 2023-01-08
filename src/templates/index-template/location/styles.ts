@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-  background-color: var(--blue-500);
+  background-color: var(--brand-500);
   padding: 4rem 0;
   margin-top: 8rem;
 `;
@@ -52,14 +52,14 @@ export const Location = styled.div`
     text-align: justify;
 
      a {
-      color: var(--blue-100);
+      color: var(--brand-100);
       text-decoration: none;
       position: relative;
 
       &::after {
         content: '';
         display: block;
-        background-color: var(--blue-100);
+        background-color: var(--brand-100);
         position: absolute;
         bottom: 0;
         left: 0;
