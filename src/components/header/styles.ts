@@ -100,7 +100,6 @@ export const Sections = styled.div`
 
   @media (max-width: 900px) {
     flex-direction: column;
-
   }
 `;
 
@@ -110,7 +109,8 @@ export const NavItem = styled.div`
   justify-content: center;
   align-items: center;
 
-  button, a {
+  button,
+  a {
     font-family: 'Lato';
     font-weight: bold;
     color: var(--text-900);
@@ -119,6 +119,12 @@ export const NavItem = styled.div`
     position: relative;
     background-color: transparent;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 0.5rem;
+    }
 
     @media (max-width: 900px) {
       color: var(--background);
@@ -158,12 +164,35 @@ export const Donation = styled.button`
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--background);
-  padding: 4px 16px;
+  padding: 8px 16px;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out filter;
+
+  &:hover {
+    filter: brightness(1.2);
+
+    svg {
+      transform: scale(1.25);
+    }
+  }
+
+  span {
+    margin-right: 0.5rem;
+  }
+
+  svg {
+    font-size: 25px;
+    transition: 0.2s ease-in-out transform;
+  }
 
   @media (max-width: 900px) {
     margin-left: 0;
     margin-top: 3rem;
     text-transform: none;
+    background: var(--background);
+    color: var(--brand-500);
   }
 `;
