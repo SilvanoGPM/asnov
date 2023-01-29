@@ -1,13 +1,17 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { useOnScrollListener } from '../../hooks/use-on-scroll-listener';
 
 import { Navigation } from './navigation';
 
 import * as S from './styles';
 
+const MIN_PAGE_OFFSET = 100;
+
 export function Header() {
   const [showNav, setShowNav] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
   function handleOpen() {
     setShowNav(true);
@@ -17,9 +21,13 @@ export function Header() {
     setShowNav(false);
   }
 
+  useOnScrollListener(() => {
+    setScrolled(window.pageYOffset > MIN_PAGE_OFFSET);
+  });
+
   return (
     <>
-      <S.Header>
+      <S.Header scrolled={scrolled}>
         <a href="/">
           <S.Logo>
             <StaticImage
@@ -38,8 +46,6 @@ export function Header() {
           </S.Menu>
         )}
       </S.Header>
-
-      <S.HeaderSpacer />
     </>
   );
 }

@@ -58,7 +58,7 @@ export function Navigation({ isOpen, onClose }: NavigationProps) {
         <AiFillHeart />
       </S.Donation>
 
-      <S.Close aria-label="Fechar Menu" onClick={onClose}>
+      <S.Close className="close" aria-label="Fechar Menu" onClick={onClose}>
         <AiOutlineClose />
       </S.Close>
     </S.Nav>

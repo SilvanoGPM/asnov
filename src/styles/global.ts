@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Lato';
         src: url(${latoBlackFont}) format('truetype');
-        font-weight: bolder;
+        font-weight: 900;
         font-display: swap;
     }
 

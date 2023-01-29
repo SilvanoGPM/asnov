@@ -4,30 +4,14 @@ interface NavProps {
   isOpen: boolean;
 }
 
-export const Header = styled.header`
-  background-color: var(--background);
-  height: 90px;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
-`;
-
-export const HeaderSpacer = styled.div`
-  width: 100%;
-  height: 90px;
-`;
+interface HeaderProps {
+  scrolled: boolean;
+}
 
 export const Logo = styled.figure`
   width: 150px;
   margin-right: 30px;
+  transition: 0.1s ease-in-out;
 
   img {
     max-width: 100%;
@@ -38,7 +22,6 @@ export const Menu = styled.button`
   --size: 40px;
   margin-left: auto;
   background-color: transparent;
-  color: var(--text-900);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,6 +29,7 @@ export const Menu = styled.button`
   height: var(--size);
   font-size: 1.5rem;
   border: 1px solid #ffffff;
+  transition: 0.2s ease-in-out;
 
   @media (min-width: 900px) {
     display: none;
@@ -70,6 +54,7 @@ export const Nav = styled.nav<NavProps>`
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: 0.1s ease-in-out;
 
   @media (max-width: 900px) {
     overflow: hidden;
@@ -89,6 +74,44 @@ export const Nav = styled.nav<NavProps>`
       display: flex;
       color: var(--background);
     }
+  }
+`;
+
+export const Header = styled.header<HeaderProps>`
+  background-color: ${({ scrolled }) =>
+    scrolled ? 'var(--background)' : 'transparent'};
+
+  box-shadow: ${({ scrolled }) =>
+    scrolled
+      ? `rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;`
+      : 'none'};
+
+  transition: 0.1s ease-in-out;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  ${Nav} {
+    color: ${({ scrolled }) =>
+      scrolled ? 'var(--text-900)' : 'var(--background)'};
+  }
+
+  ${Logo} {
+    filter: ${({ scrolled }) =>
+      scrolled ? 'brightness(1) invert(0)' : 'brightness(0) invert(1)'};
+  }
+
+  ${Menu}:not(.close) {
+    color: ${({ scrolled }) =>
+      scrolled ? 'var(--text-900)' : 'var(--background)'};
   }
 `;
 
@@ -113,7 +136,7 @@ export const NavItem = styled.div`
   a {
     font-family: 'Lato';
     font-weight: bold;
-    color: var(--text-900);
+    color: inherit;
     border: none;
     font-size: 1rem;
     position: relative;
@@ -138,7 +161,7 @@ export const NavItem = styled.div`
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--text-900);
+      background-color: currentColor;
       transition: 0.2s width;
     }
 
