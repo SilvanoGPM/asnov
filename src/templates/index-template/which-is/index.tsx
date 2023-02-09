@@ -8,6 +8,7 @@ export function WhichIs() {
   return (
     <>
       <div data-scroll="which-is" />
+
       <S.Container>
         <S.WhichIs>
           <ScrollAnimation animateIn="animate__fadeIn" animateOnce>

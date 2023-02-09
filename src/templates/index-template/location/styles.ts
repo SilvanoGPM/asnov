@@ -13,6 +13,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @media (max-width: 1080px) {
     flex-direction: column;
@@ -73,4 +74,10 @@ export const Location = styled.div`
       }
      }
   }
+`;
+
+export const Wave = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
 `;

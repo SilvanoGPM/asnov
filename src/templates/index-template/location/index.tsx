@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Wave from 'react-wavify';
 
 import * as S from './styles';
 
@@ -8,6 +9,10 @@ export function Location() {
   return (
     <>
       <div data-scroll="location" />
+
+      <S.Wave>
+        <Wave fill="#336645" />
+      </S.Wave>
 
       <S.Wrapper>
         <S.Container>
