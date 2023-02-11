@@ -5,6 +5,7 @@ import { FaHandHoldingHeart } from 'react-icons/fa';
 
 import * as S from './styles';
 import { ScrollButton } from '../../../components/scroll-button';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export function Home() {
   return (
@@ -14,23 +15,38 @@ export function Home() {
       </S.Figure>
 
       <S.Content>
-        <h2>Nos ajude a salvar o mundo</h2>
+        <ScrollAnimation animateIn="animate__fadeInDown" animateOnce>
+          <h2>Nos ajude a salvar o mundo</h2>
+        </ScrollAnimation>
 
-        <p>
-          Associação de Catadores de Papelão e Material Reaproveitável Nova Vida
-        </p>
+        <ScrollAnimation
+          animateIn="animate__fadeInDown"
+          delay={500}
+          animateOnce
+        >
+          <p>
+            Associação de Catadores de Papelão e Material Reaproveitável Nova
+            Vida
+          </p>
+        </ScrollAnimation>
 
-        <S.Actions>
-          <ScrollButton dataScroll="which-is">
-            <AiFillInfoCircle />
-            <span>Sobre nós</span>
-          </ScrollButton>
+        <ScrollAnimation
+          animateIn="animate__fadeInDown"
+          delay={750}
+          animateOnce
+        >
+          <S.Actions>
+            <ScrollButton dataScroll="which-is">
+              <AiFillInfoCircle />
+              <span>Sobre nós</span>
+            </ScrollButton>
 
-          <ScrollButton dataScroll="donate" className="secondary">
-            <FaHandHoldingHeart />
-            <span>Doações</span>
-          </ScrollButton>
-        </S.Actions>
+            <ScrollButton dataScroll="donate" className="secondary">
+              <FaHandHoldingHeart />
+              <span>Doações</span>
+            </ScrollButton>
+          </S.Actions>
+        </ScrollAnimation>
       </S.Content>
     </S.Container>
   );
