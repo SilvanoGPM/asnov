@@ -15,7 +15,7 @@ export function Donate() {
           <p>A asnov agradece sua ajuda</p>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="animate__fadeInUp" delay={1000} animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp" delay={750} animateOnce>
           <S.Button href="https://www.vakinha.com.br/3379713" target="_blank">
             Doar
           </S.Button>
