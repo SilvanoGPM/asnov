@@ -184,7 +184,7 @@ export const Donation = styled.button`
   background-color: var(--brand-500);
   border: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--background);
   padding: 8px 16px;
@@ -193,6 +193,9 @@ export const Donation = styled.button`
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out filter;
+  border-radius: 2rem;
+  height: 40px;
+  width: 150px;
 
   &:hover {
     filter: brightness(1.2);
@@ -202,12 +205,16 @@ export const Donation = styled.button`
     }
   }
 
+  &:active {
+    transform: scale(0.95);
+  }
+
   span {
     margin-right: 0.5rem;
   }
 
   svg {
-    font-size: 25px;
+    font-size: 16px;
     transition: 0.2s ease-in-out transform;
   }
 

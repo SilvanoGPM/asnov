@@ -44,12 +44,16 @@ export const Button = styled.a`
   max-width: 300px;
   font-weight: bold;
   font-size: 2rem;
-  font-size: italic;
   text-transform: uppercase;
   padding: 1rem 0;
   box-shadow: #cccccc 5px 5px, #dddddd 10px 10px, #eeeeee 15px 15px;
   transition: 0.2s box-shadow;
   margin-top: 2rem;
+  border-radius: 2rem;
+
+  &:active {
+    transform: scale(0.95);
+  }
 
   &:hover {
     box-shadow: rgba(51, 102, 69, 0.4) 5px 5px, rgba(51, 102, 69, 0.3) 10px 10px,

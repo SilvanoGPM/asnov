@@ -10,12 +10,12 @@ export function Donate() {
       <div data-scroll="donate" style={{ height: '10px' }} />
 
       <S.Container>
-        <ScrollAnimation animateIn="animate__fadeInUp" delay={500} animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp" delay={250} animateOnce>
           <h2>Seja um doador</h2>
           <p>A asnov agradece sua ajuda</p>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="animate__fadeInUp" delay={750} animateOnce>
+        <ScrollAnimation animateIn="animate__fadeInUp" delay={500} animateOnce>
           <S.Button href="https://www.vakinha.com.br/3379713" target="_blank">
             Doar
           </S.Button>
@@ -23,7 +23,7 @@ export function Donate() {
 
         <ScrollAnimation
           animateIn="animate__jackInTheBox"
-          delay={1000}
+          delay={750}
           animateOnce
         >
           <S.Figure>

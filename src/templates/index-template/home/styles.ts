@@ -60,7 +60,7 @@ export const Content = styled.div`
 `;
 
 export const Actions = styled.div`
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
 
@@ -75,13 +75,32 @@ export const Actions = styled.div`
     padding: 0.5rem 1.5rem;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 1.1rem;
+    width: 200px;
+    height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: 0.2s ease-in-out filter;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.1);
+    border-radius: 2rem;
+    border: solid 2px var(--brand-500);
 
     &.secondary {
-      background-color: var(--brand-100);
+      background-color: transparent;
+      color: var(--brand-100);
+      border: solid 2px var(--brand-100);
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(1.2);
+        background-color: var(--brand-100);
+        color: var(--background);
+      }
+    }
+
+    &:active {
+      transform: scale(0.95);
     }
 
     &:hover {
