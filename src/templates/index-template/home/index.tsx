@@ -5,7 +5,7 @@ import { FaHandHoldingHeart } from 'react-icons/fa';
 
 import * as S from './styles';
 import { ScrollButton } from '../../../components/scroll-button';
-import ScrollAnimation from 'react-animate-on-scroll';
+import { AnimateOnScroll } from '../../../components/animate-on-scroll';
 
 export function Home() {
   return (
@@ -15,26 +15,18 @@ export function Home() {
       </S.Figure>
 
       <S.Content>
-        <ScrollAnimation animateIn="animate__fadeInDown" animateOnce>
+        <AnimateOnScroll onIn="fadeInDown">
           <h2>Nos ajude a salvar o mundo</h2>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
-        <ScrollAnimation
-          animateIn="animate__fadeInDown"
-          delay={500}
-          animateOnce
-        >
+        <AnimateOnScroll onIn="fadeInDown" delay={500}>
           <p>
             Associação de Catadores de Papelão e Material Reaproveitável Nova
             Vida
           </p>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
-        <ScrollAnimation
-          animateIn="animate__fadeInDown"
-          delay={750}
-          animateOnce
-        >
+        <AnimateOnScroll onIn="fadeInDown" delay={750}>
           <S.Actions>
             <ScrollButton dataScroll="which-is">
               <AiFillInfoCircle />
@@ -46,7 +38,7 @@ export function Home() {
               <span>Doações</span>
             </ScrollButton>
           </S.Actions>
-        </ScrollAnimation>
+        </AnimateOnScroll>
       </S.Content>
     </S.Container>
   );

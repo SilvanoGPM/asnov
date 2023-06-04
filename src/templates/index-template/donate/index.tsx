@@ -1,8 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import * as S from './styles';
+import { AnimateOnScroll } from '../../../components/animate-on-scroll';
 
 export function Donate() {
   return (
@@ -10,21 +10,20 @@ export function Donate() {
       <div data-scroll="donate" style={{ height: '10px' }} />
 
       <S.Container>
-        <ScrollAnimation animateIn="animate__fadeInUp" delay={250} animateOnce>
+        <AnimateOnScroll onIn="fadeInUp" delay={250}>
           <h2>Seja um doador</h2>
           <p>A asnov agradece sua ajuda</p>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
-        <ScrollAnimation animateIn="animate__fadeInUp" delay={500} animateOnce>
+        <AnimateOnScroll onIn="fadeInUp" delay={250}>
           <S.Button href="https://www.vakinha.com.br/3379713" target="_blank">
             Doar
           </S.Button>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
-        <ScrollAnimation
-          animateIn="animate__jackInTheBox"
+        <AnimateOnScroll
+          onIn="jackInTheBox"
           delay={750}
-          animateOnce
         >
           <S.Figure>
             <StaticImage
@@ -32,7 +31,7 @@ export function Donate() {
               src="../../../images/donate.png"
             />
           </S.Figure>
-        </ScrollAnimation>
+        </AnimateOnScroll>
       </S.Container>
     </>
   );

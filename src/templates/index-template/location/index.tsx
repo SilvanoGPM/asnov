@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Wave from 'react-wavify';
 
 import * as S from './styles';
+import { AnimateOnScroll } from '../../../components/animate-on-scroll';
 
 export function Location() {
   return (
@@ -17,15 +17,11 @@ export function Location() {
       <S.Wrapper>
         <S.Container>
           <S.Location>
-            <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce>
+            <AnimateOnScroll onIn="fadeInLeft">
               <h2>Localização</h2>
-            </ScrollAnimation>
+            </AnimateOnScroll>
 
-            <ScrollAnimation
-              animateIn="animate__fadeInLeft"
-              delay={500}
-              animateOnce
-            >
+            <AnimateOnScroll onIn="fadeInLeft" delay={500}>
               <p>
                 Nossas instalações ficam localizadas no bairro{' '}
                 <a
@@ -44,21 +40,17 @@ export function Location() {
                 caso deseje nós visitar, avise através de nossas redes que lhe
                 receberemos com todo prazer.
               </p>
-            </ScrollAnimation>
+            </AnimateOnScroll>
           </S.Location>
 
-          <ScrollAnimation
-            animateIn="animate__fadeInRight"
-            delay={800}
-            animateOnce
-          >
+          <AnimateOnScroll onIn="fadeInRight" delay={800}>
             <S.Figure>
               <StaticImage
                 alt="Mulher em cima de marcador de mapa azul, com algumas árvores ao lado"
                 src="../../../images/location.png"
               />
             </S.Figure>
-          </ScrollAnimation>
+          </AnimateOnScroll>
         </S.Container>
       </S.Wrapper>
     </>

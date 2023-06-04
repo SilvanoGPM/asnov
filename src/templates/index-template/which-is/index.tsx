@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import * as S from './styles';
+import { AnimateOnScroll } from '../../../components/animate-on-scroll';
 
 export function WhichIs() {
   return (
@@ -11,11 +11,11 @@ export function WhichIs() {
 
       <S.Container>
         <S.WhichIs>
-          <ScrollAnimation animateIn="animate__fadeIn" animateOnce>
+          <AnimateOnScroll onIn="fadeIn">
             <h2>O que é a Asnov?</h2>
-          </ScrollAnimation>
+          </AnimateOnScroll>
 
-          <ScrollAnimation animateIn="animate__fadeIn" delay={800} animateOnce>
+          <AnimateOnScroll onIn="fadeIn" delay={800}>
             <p>
               A Associação de Catadores de Papelão e Material Reaproveitável
               Nova Vida (ASNOV) foi inaugurada em{' '}
@@ -23,7 +23,7 @@ export function WhichIs() {
               movimentação do mercado da <span>reciclagem no Brasil</span>. Eles representam
               o elo essencial entre nosso consumo e a industria da reciclagem.
             </p>
-          </ScrollAnimation>
+          </AnimateOnScroll>
         </S.WhichIs>
 
         <S.Figure>

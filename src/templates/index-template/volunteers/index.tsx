@@ -1,8 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import * as S from './styles';
+import { AnimateOnScroll } from '../../../components/animate-on-scroll';
 
 export function Volunteers() {
   return (
@@ -10,11 +10,11 @@ export function Volunteers() {
       <div data-scroll="volunteers" />
 
       <S.Container>
-        <ScrollAnimation animateIn="animate__flipInX" animateOnce>
+        <AnimateOnScroll onIn="flipInX">
           <h2>Voluntários</h2>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
-        <ScrollAnimation animateIn="animate__fadeIn" animateOnce>
+        <AnimateOnScroll onIn="fadeIn">
           <S.Figure>
             <StaticImage
               alt="Várias pessoas levando caixas"
@@ -22,28 +22,19 @@ export function Volunteers() {
               objectFit="cover"
             />
           </S.Figure>
-        </ScrollAnimation>
+        </AnimateOnScroll>
 
         <S.Description>
-          <ScrollAnimation
-            animateIn="animate__fadeIn"
-            animateOnce
-            className="animation"
-          >
+          <AnimateOnScroll onIn="fadeIn" className="animation">
             <p>
               O sistema de voluntários funcionará de forma simples, serão
               dividos 3 grupos: o dos moradores, da triagem e do armazenamento
               cada grupo terá funções específicas e poderá ajudar de diferentes
               maneiras.
             </p>
-          </ScrollAnimation>
+          </AnimateOnScroll>
 
-          <ScrollAnimation
-            animateIn="animate__fadeIn"
-            delay={500}
-            animateOnce
-            className="animation"
-          >
+          <AnimateOnScroll onIn="fadeIn" delay={500} className="animation">
             <p>
               Você tem interesse em ajudar nossa associação? Se sim é simples,
               basta nos seguir em nossas{' '}
@@ -63,7 +54,7 @@ export function Volunteers() {
               para ser chamado, fazendo isso com pouco tempo você poderá já
               estar ajudando.
             </p>
-          </ScrollAnimation>
+          </AnimateOnScroll>
         </S.Description>
       </S.Container>
     </>
