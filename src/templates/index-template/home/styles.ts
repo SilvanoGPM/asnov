@@ -87,14 +87,14 @@ export const Actions = styled.div`
     border: solid 2px var(--brand-500);
 
     &.secondary {
-      background-color: transparent;
+      background-color: rgba(17, 245, 97, 0.2);
       color: var(--brand-100);
       border: solid 2px var(--brand-100);
       transition: 0.2s ease-in-out;
 
       &:hover {
         filter: brightness(1.2);
-        background-color: var(--brand-100);
+        background-color: rgba(17, 245, 97, 0.5);
         color: var(--background);
       }
     }
